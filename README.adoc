@@ -1,9 +1,9 @@
-= shellspec -- a behavior-driven development (BDD) testing framework for shell scripts written in bash, dash, ksh, zsh and other POSIX compatible shells.
+= Git, gh, & other packages for github.com
 :backend: asciidoctor
 :github-flavored:  // enables GitHub-specific features like tables, task lists, and fenced code blocks
 ifndef::env-github[:icons: font]
 ifdef::env-github[]
-// Naughty Waco Temps
+ // Naughty Waco Temps
 :note-caption: :paperclip:
 :tip-caption: :bulb:
 :warning-caption: :warning:
@@ -17,23 +17,57 @@ endif::[]
 
 == Discover
 
-Projects using shellspec: +
-https://shellspec.info/
+Install, update, and remove are performed with the distribution package manager.
 
-Project examples: +
-https://github.com/snyk/cli/tree/master/test/smoke/spec
-
+GitHub desktop: to manage a local version
 
 == Learn
 
-Tutorial: +
-https://github.com/shellspec/shellspec/tree/master
+=== Tutorials
+
+https://kamranahmed.info/blog/2015/07/20/random-git-tips-and-tricks/
+
+
+==== Updating a fork
+
+https://www.earthdatascience.org/courses/intro-to-earth-data-science/git-github/github-collaboration/update-github-repositories-with-changes-by-others/ #:~:text=You%20can%20update%20your%20fork,be%20updated%20in%20your%20fork.
+
+https://levelup.gitconnected.com/how-to-sync-forked-repositories-using-git-or-github-2933e497fa16
+
+
+=== Objectives
+
+Here are github.com techniques to acquire. Corresponding learning assets should be further provided.
+
+* Beginner Techniques: 
+** Creating a Repository: Learn how to create a new repository on GitHub. 
+** Cloning Repositories: Understand how to clone a repository to your local machine using Git. 
+** Committing Changes: Learn how to make changes to files and commit them to your repository. 
+** Branching and Merging: Understand the basics of branching and merging to work on different features or bug fixes. 
+** Pull Requests: Learn how to create and manage pull requests to propose changes to a project. 
+ 
+* Intermediate Techniques: 
+** Collaboration: Understand how to collaborate with others by forking repositories, opening issues, and contributing to open-source projects. 
+** Git Workflow: Learn about different Git workflows like Gitflow or GitHub flow to manage larger projects. 
+** Version Control: Explore advanced version control techniques like reverting commits, cherry-picking, and interactive rebasing. 
+** Code Reviews: Understand how to participate in code reviews and provide constructive feedback to improve code quality. 
+** Continuous Integration: Learn how to integrate GitHub with continuous integration tools like Travis CI or Jenkins for automated testing and deployment. 
+ 
+* Advanced Techniques: 
+** GitHub Actions: Explore GitHub's built-in CI/CD platform to automate workflows and build custom actions. 
+** GitHub API: Learn how to interact with the GitHub API to programmatically manage repositories, issues, and pull requests. 
+** GitHub Pages: Understand how to leverage GitHub Pages to host static websites directly from your repositories. 
+** Advanced Git Commands: Explore advanced Git commands like cherry-picking, rebasing, squashing commits, and managing submodules. 
+** Repository Administration: Learn about repository settings, managing collaborators, and using GitHub's security features like code scanning and dependency management. 
 
 == Cultivate
 
+== Master
 
-== Develop & Deploy, Master
+=== In all machines, have a local copy of GitHub repositories under the same directory:
 
+In settings.json (ctrl+comma):
+
+"git.defaultCloneDirectory": "~/Documents/GitHub/",
 
 == Todo
-
