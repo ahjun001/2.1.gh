@@ -62,6 +62,45 @@ Here are github.com techniques to acquire. Corresponding learning assets should 
 
 == Cultivate
 
+To meet the 2FA requirement on GitHub.com, you should use one of the following methods Application-based 2FA, you can also use TOTP-based 2FA or security keys.
+
+TOTP-based 2FA is a type of 2FA that uses a time-based one-time password (TOTP) algorithm. This algorithm generates a different code every time it is requested, and the code is only valid for a short period of time. This makes it more secure than SMS-based 2FA, which can be intercepted by malicious actors.
+
+Security keys are physical devices that you plug into your computer when you log in to your GitHub account. These devices use a variety of protocols, such as FIDO2 and Yubico OTP, to authenticate users. This makes them even more secure than TOTP-based 2FA, as they cannot be intercepted by malicious actors.
+
+Here are the pros and cons of each method:
+Method	Pros	Cons
+Application-based 2FA	Convenient, easy to set up, relatively secure	Your phone may run out of battery, you may lose your phone, you may not have access to your phone in some situations
+TOTP-based 2FA	Very secure, does not rely on your phone	You need to have a compatible device, you may need to enter a code manually
+Security keys	Most secure, does not rely on your phone or any other device	Can be expensive, you may not have access to a security key
+
+Yes, your Linux machine can be a TOTP-based 2FA compatible device. There are a few different ways to do this, but the most common way is to use the Google Authenticator PAM (Pluggable Authentication Module). The PAM is a piece of software that integrates with Linux's login system to allow you to use TOTP-based 2FA.
+In fact on Fedora / Plasma numberstation works well
+
+To install the Authenticator PAM, you can use the following command:
+
+sudo dnf install numberstation
+sudo dnf install google-authenticator
+
+
+Once you have installed the PAM, you will need to generate a TOTP key for your account. You can do this by running the following command:
+
+GUI numberstaion
+google-authenticator
+
+This will display a QR code / number that you can scan / enter with your Linux machine. The PAM will then generate a TOTP key for your account.
+
+To use the TOTP key to log in to your account, you will need to enter the code that is displayed on your Linux machine. The code will only be valid for a short period of time, so you will need to ensure that you enter it before it expires.
+
+Here is an example of how to configure GitHub to use TOTP-based 2FA with your Linux machine:
+
+    Go to your GitHub settings and enable two-factor authentication.
+    Select the "TOTP" option and click "Add security code."
+    Scan the QR code that is displayed on the GitHub website using your Linux machine.
+    Enter the code that is displayed on your Linux machine.
+    Click "Verify."
+
+
 == Master
 
 === In all machines, have a local copy of GitHub repositories under the same directory:
